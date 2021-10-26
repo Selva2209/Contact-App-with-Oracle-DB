@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/xe
+    username: admin
+    password: admin
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    hibernate:
+       ddl-auto: update
+  mvc:
+    view:
+      prefix: /Views/
+      suffix: .jsp
